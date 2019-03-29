@@ -125,7 +125,7 @@ def analyze(raw_tpf, period, t0, name='target', aper=None, nb=100):
 
 
 
-    aper &= np.log10(score) < -10
+    aper &= np.log10(score) < -30
 
     data_b = np.asarray([np.median(data[ind, :, :], axis=0) for ind in inds])
     model_b = np.asarray([np.median(model[ind, :, :], axis=0) for ind in inds])

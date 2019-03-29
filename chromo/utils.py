@@ -217,7 +217,6 @@ def plot_crobat(x_fold_b, resids, secondary_mask, aper, **kwargs):
 #    ax.axvline(0, ls='--', color='k')
 
     ax = plt.subplot2grid((1, 4), (0, 3), colspan=1, fig=fig)
-    # im = ax.imshow(secondary_depth_resid, cmap=cmap, norm=norm)
     im = ax.imshow(secondary_depth_resid/(aper), cmap=cmap, norm=norm)
 
     divider = make_axes_locatable(ax)
